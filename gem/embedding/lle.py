@@ -3,8 +3,7 @@ import os
 if 'DISPLAY' not in os.environ:
     disp_avlbl = False
     import matplotlib
-    matplotlib.use('Agg')
-import matplotlib.pyplot as plt
+    matplotlib.use('Agg', warn=False)
 
 import matplotlib.pyplot as plt
 import networkx as nx
