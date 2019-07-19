@@ -3,14 +3,14 @@ import os
 if 'DISPLAY' not in os.environ:
     disp_avlbl = False
     import matplotlib
-    matplotlib.use('Agg')
+    matplotlib.use('Agg', warn=False)
+    
 import matplotlib.pyplot as plt
-
 import numpy as np
 import scipy.io as sio
 import networkx as nx
-
 import sys
+
 sys.path.append('./')
 sys.path.append(os.path.realpath(__file__))
 
